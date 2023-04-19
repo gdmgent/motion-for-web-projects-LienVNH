@@ -1,0 +1,47 @@
+header nav {
+  background-color: aqua;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  color: tomato;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+h1.primary {
+  color: hsl(100, 50%, 50%);
+}
+
+a.btn.primary {
+  color: "primary" hsl(100, 50%, 50%), "secondary" hsl(200, 50%, 50%), "tertiary" hsl(300, 50%, 50%);
+}
+a.btn.primary:hover {
+  background-color: #559933;
+}
+
+h1.secondary {
+  color: hsl(200, 50%, 50%);
+}
+
+a.btn.secondary {
+  color: "primary" hsl(100, 50%, 50%), "secondary" hsl(200, 50%, 50%), "tertiary" hsl(300, 50%, 50%);
+}
+a.btn.secondary:hover {
+  background-color: #337799;
+}
+
+h1.tertiary {
+  color: hsl(300, 50%, 50%);
+}
+
+a.btn.tertiary {
+  color: "primary" hsl(100, 50%, 50%), "secondary" hsl(200, 50%, 50%), "tertiary" hsl(300, 50%, 50%);
+}
+a.btn.tertiary:hover {
+  background-color: #993399;
+}/*# sourceMappingURL=style.css.map */

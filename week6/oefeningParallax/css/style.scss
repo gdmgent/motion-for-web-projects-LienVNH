@@ -1,0 +1,75 @@
+body {
+    background-color: hsl(72, 88%, 39%);
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url(RobotoFlex.ttf) format('truetype');
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'RobotoFlex';
+    font-size: 3rem;
+    font-variation-settings: 
+        "wght" 500, 
+        "wdth" 100;
+    text-align: center;
+  
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: calc(10vw + 20vh);
+    letter-spacing: 0.001em;
+    font-variation-settings: "wght" 600, "wdth" 60;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    font-variation-settings: "wght" 800, "wdth" 200;
+    transition: color 0.5s ease;
+    color: hsl(321, 83%, 50%)
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:hsl(321, 82%, 50%);
+    font-family: 'RobotoFlex';
+    font-size: 6rem;
+    font-variation-settings: 
+        "wght" 500, 
+        "wdth" 100;
+  
+    text-shadow: 
+    .06em .06em 0px #ED1F82,
+    -.06em -.06em 0px #1FEDE0;
+
+}
+h1:hover {
+    
+    font-variation-settings: 
+        "wght" 300, 
+        "wdth" 500;
+         
+}
+
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    section {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: end; 
+
+    }
+}
+            
