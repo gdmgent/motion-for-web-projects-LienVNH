@@ -4,7 +4,7 @@ animals.forEach(animal => {
 
 gsap.from(animal, {
     scrollTrigger:{
-        trigger:article,
+        trigger:"main",
         toggleActions: "play reverse play reverse",
         start: "top 80%",
         end: "bottom 20%",
