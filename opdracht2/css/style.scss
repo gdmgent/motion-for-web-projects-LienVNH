@@ -1,240 +1,275 @@
-@import'./variables';
-
-
-@mixin flexCenter{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+html{
+  height: 100vh;
+  overflow: hidden
 }
 
-main {
-  overflow:hidden;
-  overflow-y: scroll;
-  
-  
+$color-Box: hsl(35, 94%, 28%); 
+$color-textP: hsl(35, 96%, 21%);
+$color-title: hsl(35, 56%, 79%);
+$color-background1: hsl(125, 53%, 18%);
+$color-background2: hsl(105, 89%, 35%);
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
-  height: 100vh;
   width: 100vw;
-  margin:0;
-  background: $color-background1;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  transform-style: preserve-3d;
   overflow-x: hidden;
-  perspective: 2px;
-  @include flexCenter();
-  
-
-  
+  overflow-y: scroll;
+  perspective: 1px;
+  color: $color-textP
 }
 
-nav {
-  scroll-behavior: smooth;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  left: 0;
-  display: block;
-  flex-direction: row;
-  width: 100vw;
-  z-index: 1000;
- 
-}
-
-
-.section1 {
-  
+.parallax1, .chapter1 {
   width:100%;
   height: 100vh;
   position: relative;
   transform-style: preserve-3d;
-  z-index: 0;
 
-    &::before {
-    content:"";
-    width:100%;
-    height: 80%;
-    position: absolute;
-    z-index: -1;
-    background: url("../images/parralax/verloop-Forest1-sergei-a--heLWtuAN3c-unsplash.png");
-    background-size: cover;
-    transform: translateZ(-1px) scale(2.2);
-    filter: blur(2px);
-    }
-
-
-    &::after {
-    content:"";
-    width:100%;
-    height: 100%;
-    position: absolute;
-    background: url("../images/section1/1SelectieBerry-jamie-street-0wyjE0FzVm4-unsplash.png");
-    background-repeat: no-repeat;
-    background-size:cover; 
-    background-position: right 35% bottom 45%;
-    z-index: 1;
-    }
 }
-
-.section2 {
-  
-  width:100%;
-  min-height:100%;
-  position: relative;
-  transform-style: preserve-3d;
-  z-index: 0;
-}
-
-.section2 {
+.parallax1::before {
+  content:"";
   width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  background-image: url("../images/chapter1/eugene-triguba-Cm5zI68Wdew-unsplash\ \(1\).jpg");
-  background-repeat: no-repeat;
+  height:100%;
+  position:absolute;
+  background-image: url(../images/section1/Forest1-sergei-a--heLWtuAN3c-unsplash.jpg);
   background-size: cover;
-  background-position: center;
-  z-index: 2;
-  transform: translateZ(-0.5px);
- }
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale (2.2);
+  filter: blur(2px);
+  z-index: -1;
 
-  .section2::after {  
-    content:"";
-    width:100%;
-    height: 100%;
-    position: absolute;
-    background: url("../images/chapter1/Vrijstelling-oscar-sutton-yihlaRCCvd4-unsplash.png");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: 25% 75%;
-    z-index: 3;
-    }
+}
 
-
-.chapter3 {
- 
+.parallax1::after {
+  content:"";
   width: 100%;
-  max-height: 100vh;
-  position: inherit;
-  transform-style: preserve-3d;
-  background-color: rgb(255, 0, 187);
+  height:100%;
+  position:absolute;
+  background-image: url(../images/section1/1SelectieBerry-jamie-street-0wyjE0FzVm4-unsplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 35% ;
+  z-index: 0;
 }
 
-.section4 {
+.chapter1,.chapter2, .chapter3,.chapter4,.chapter5,.TheEnd { 
+  background-color:$color-Box;
+  max-height: 10vh;
  
-    width: 100%;
-    max-height: 100vh;
-    position: inherit;
-    transform-style: preserve-3d;
-    background-color: rgb(0, 255, 85);
-  
 }
-
-.section5 {
-  
-  width: 100%;
-  max-height: 100vh;
-  position: inherit;
-  transform-style: preserve-3d;
-  background-color: rgb(81, 0, 255);
-}
-
-.section6 {
- 
-    width: 100%;
-    max-height: 100vh;
-    position: inherit;
-    transform-style: preserve-3d;
-    background-color: rgb(0, 238, 255);
-  }
 
 h1 {
-  @include flexCenter();
-  width: 100vw;
-  font-family: 'Franklin Gothic Heavy';
-  font-size: 5vw;
-  color:hsl(0, 0%, 100%);
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-  5px 5px 70px rgba(255,255,255,0.5);
-  transform: scale(1,1.1) translate(-50%, 10%);
- 
-}
-
-p {
-  display:flex;
-  flex-wrap: wrap;
-  padding: 5rem;
-  justify-content: baseline;
-  flex-direction: column;
-  position: relative;
-  font-family:'Open Sans', sans-serif;
-  font-size: 1vw;
-  font-weight: 500;
-  color:rgb(58, 2, 2);
+  display: flex;
   text-align: center;
-  margin-block: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem; 
+  justify-content: center;
+  padding-top: 20rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 9vw;
+  color: $color-title;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3), 5px 5px 70px rgba(255,255,255,0.5);
+  transform: translateZ(-0.5px) scale(1.5,1.6) translate (-33%,10%);   
+  position: absolute;
+  z-index: 1;
 }
 
 h2 {
-  
-    inline-size: 10vw;
-    overflow-wrap: break-word;
-    color:rgb(247, 239, 239);
-    z-index: 0;
+  @include flexCenter();
+  color: $color-textP;
+  }
 
-}
+  p {
+    color: $color-textP;
+    z-index:5;
+  }
 
-.section1 .text {
-  top:10%;
-  transform: translateZ(3px) scale(1.5,1.6) translate(-33%,10%);
+  .textH1, .textH2, .textH3, .textH4,.textH5{
+    position: absolute;
+    display:flexbox;
+    text-align: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    transform: translateZ(-0.5px) scale(1.5,1.6) translate (-33%,10%);   
+    
+    z-index: 4;
+  }
 
-}
-.section2 .text p {
-  
-  display: flexbox;
-  justify-content: center;
-  text-align: center;
-  margin-top: 2rem;
-  padding-bottom: 4rem;
-  color:hsl(0, 0%, 100%);
-  padding-top: 6rem;
-}
-.section3 .text p {
-  display: flexbox;
-  flex-flow: row;
-  margin-left: 2rem;
-  padding-left: 7rem;
-  padding-bottom: 4rem;
-}
-.section4 .text p {
-  display: flexbox;
-  flex-flow: row-reverse;
-  margin-right: 2rem;
-  padding-right: 7rem;
-  padding-bottom: 4rem;
-}
-.section5 .text p {
-  
-  display: flexbox;
-  justify-content: center;
-  text-align: center;
-  margin-top: 2rem;
-  padding-bottom: 4rem;
-  
-}
-.section6 .text p {
-  
-  display: flexbox;
-  flex-flow: row;
-  padding-left: 7rem;
-  padding-bottom: 4rem;
-}
+  .paralax2, .chapter2 { 
+    width:100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
 
-.Box1 {
-  z-index:2;
-  width: 100vw;
-  height: 100vh;
-  background-color: bisque;
-}
+  .paralax2::before {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter1/eugene-triguba-Cm5zI68Wdew-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale (2.2);
+    filter: blur(2px);
+    z-index: 1;
+  
+  }
+  
+  .paralax2::after {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter1/Vrijstelling-oscar-sutton-yihlaRCCvd4-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 60%;
+    z-index: 2;
+    filter: blur(3px);
+  }
+  .paralax3, .chapter3 { 
+    width:100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .paralax3::before {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter3/jamie-street-LElwzCUjleg-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale (2.2);
+    filter: blur(2px);
+    z-index: 1;
+    filter: blur(3px);
+  
+  }
+  
+  /*.paralax3::after {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 60%;
+    z-index: 2;
+  }
+  */
+
+  .paralax4, .chapter4 { 
+    width:100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .paralax4::before {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter4/johannes-plenio-hvrpOmuMrAI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale (2.2);
+    filter: blur(2px);
+    z-index: 1;
+    filter: blur(3px);
+  
+  }
+  /*
+  .paralax2::after {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter1/Vrijstelling-oscar-sutton-yihlaRCCvd4-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 60%;
+    z-index: 2;
+  }*/
+  .paralax5, .chapter5 { 
+    width:100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .paralax5::before {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter4/zoya-loonohod-mF3xkv1_oJc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale (2.2);
+    filter: blur(2px);
+    z-index: 1;
+    filter: blur(3px);
+  
+  }
+  /*
+  .paralax2::after {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter1/Vrijstelling-oscar-sutton-yihlaRCCvd4-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 60%;
+    z-index: 2;
+  }
+  */
+
+  .paralax6, .chapter6 { 
+    width:100%;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+
+  .paralax6::before {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter5/jamie-street-CwXX_Gckmzw-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale (2.2);
+    filter: blur(2px);
+    z-index: 1;
+    filter: blur(3px);
+  
+  }
+  /*
+  .paralax2::after {
+    content:"";
+    width: 100%;
+    height:100%;
+    position:absolute;
+    background-image: url(../images/chapter1/Vrijstelling-oscar-sutton-yihlaRCCvd4-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 35% bottom 60%;
+    z-index: 2;
+  }*/

@@ -1,10 +1,10 @@
-let animals = gsap.utils.toArray('article');
+let chapters = gsap.utils.toArray('article');
 
-animals.forEach(animal => {
+chapters.forEach(chapter => {
 
-gsap.from(animal, {
+gsap.from(chapter, {
     scrollTrigger:{
-        trigger:"main",
+        trigger:main,
         toggleActions: "play reverse play reverse",
         start: "top 80%",
         end: "bottom 20%",
