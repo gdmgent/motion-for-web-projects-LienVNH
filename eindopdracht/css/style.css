@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 :root {
-  --back-color: #fff;
-  --front-color: #000;
+  --back-color: #000;
+  --front-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {

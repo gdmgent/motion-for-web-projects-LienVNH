@@ -1,0 +1,20 @@
+#lien1vhn {
+    .box {
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,1fr);
+        width: 80vw;
+        height: 80vw;
+
+    }
+    .tile-black, .tile-white{
+        background-color: black;
+        width: calc(100%/8);
+        height: calc(100%/8);
+        
+    }
+    .tile-white{
+        background-color: white;
+    }
+
+ }
