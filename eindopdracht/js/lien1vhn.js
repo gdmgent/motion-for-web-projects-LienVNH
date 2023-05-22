@@ -6,16 +6,18 @@ function lien1vhn (fase) {
         section.init = true;
         // eigen animatie schrijven
         console.log("lien1vhn.js: init");
-        section.tl.to("#lien1vhn .box ",{
-            borderRadius: "0", 
-            backgroundColor: "white",
-            Color: "white", 
-            rotatian: 360,
-            left:"40vw",
-            top:"calc(50vh-10vw)",
-            width:"20vw",
-            height:"20vw",
+        section.tl
+        .to("#lien1vhn .box",{
+            rotation: 360,
+            left:0,
+            top:0,
+            width:"100%",
+            height:"100%",
+        })
             
-    })
+        }
+    }
+        
+            
+    
 
-}}

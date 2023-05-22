@@ -53,7 +53,7 @@ h1 {
     font-size: 40px;
     color: hsl(55, 94%, 50%);
     text-transform: lowercase;
-    animation: flip 2s linear;
+    animation: flip 5s linear infinite;
     animation-delay: calc(.5s * var(--i))
   }
 
@@ -78,7 +78,8 @@ h1 {
     }
   @keyframes flip {
     0%,80% {
-      transform: rotateY(360deg) 
+      transform: rotateY(360deg); 
+      
     }
   }
 @keyframes textclip {
