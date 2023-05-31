@@ -1,51 +1,168 @@
 #lien1vhn {
 
+  :root{
 
-.box {
+    // colors
+
+    --bgdark: #004746;
+    --bgmiddark:#006E6C; 
+
+    --textcolorDark:#BF9534;
+    --textcolor: #DBAB3B;
+
+    --gradiëntGold: #BC9051,#D9AD66,#FFFFFF;
+    --gradiëntBrown: #4D4135,#493C33,#FFFFFF;
+
+    // color theme Gold: 
+    --yellow-beige: #F2B950;
+    --beige:#D99C52;
+    --orangebrown:#D97F30;
+    --lightbrown:#BF571B;
+    --lightgray: #F2F2F2
+
+    // color theme Brown: 
+    --orangebrown2: #D98452;
+    --salmonpink: #D9A384;
+    --gray:#735E51;
+    --darkbrown: #402721;
+
+    
+  }
+  .box {
+    
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-self: center;
-    
-    
-}
-       
-    .board {
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction:row;
-        flex-wrap: nowrap;
-        justify-content: stretch;
-        align-items: stretch;
-        
-        > div {
-          height:100%;
-          width:12.5%;
-        }
-        
-        
-      }
-      
-      .square-white {
-        background-color: white;
-        border: solid 1px transparent;
-        width: 100%;	
-        height: 12.5%;
-        transition: background-color 0.5s ease-in-out;
-        max-width: 100%;
-        max-height: 100%;
-      }
-    
-      .square-black {
-        background-color: black;
-        border: solid 1px transparent;
-        width: 100%;	
-        height: 12.5%;
-        transition: background-color 0.5s ease-in-out;
-      }
+  }
+
+  .board {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+
+    > div {
+      height: 100%;
+      width: 12.5%;
     }
-      
+  }
+
+  .square-white {
+    background-color: white;
+    border: solid 1px transparent;
+    width: 100%;
+    height: 12.5%;
+
+    transition: background-color 0.5s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .square-black {
+    background-color: black;
+    border: solid 1px transparent;
+    width: 100%;
+    height: 12.5%;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+
+  .intro {
+    position: relative;
+    max-width: 80vw;
+    height: 90vh;
+    color: #735E51;
+    text-shadow: #BF9534 2px 2px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 15px;
+    text-align: center;
+    
+    
+  }
+
+
+
+  .card {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 90%vw;
+    margin-bottom: 3em;
+    border-radius: 50px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    height: 70vw;
+    }
+
+  .card-body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    color: #0e605f;
+      >h2 {
+        text-shadow: #BF9534 4px 4px;
+        font-size: 4rem;
+        } 
+
+        >p {
+          color: #D9AD66;
+          text-shadow: #735E51 2px 2px;
+          background: linear-gradient(hsla(35, 44%, 53%,0.5),hsla(179, 100%, 14%,0.5),hsla(35, 44%, 53%,0.5));
+          padding: 2rem;
+          font-weight: 600;
+          width: 50vw;
+
+        }
+  
+
+    >button {  
+    max-width: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background-color:#D99C52;
+    color:#4a1501;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    box-shadow:#402721 4px 4px 4px;
+
+  }
+}
+
+
+.containerspace{
+  height: 160vh;
+  background: linear-gradient(#000,#010f0f,#004746,#006E6C,#BC9051,#BF9534,#735E51,#4D4135,#402721,#000);
+  position:relative;
+  z-index: -2;
+  
+}
+img{
+  size:150%,
+  
+}
+.rightbox {
+  width: 50px;
+  height: 50px;
+  transform: rotateY(-90deg);
+  background: yellow;
+  perspective-origin: 10cm;
+}
+}
+
+

@@ -23,7 +23,7 @@ body {
 }
 
 .box {
-    color: green;
+    color: var(--back-color);
     background-color: var(--front-color);
     width: 20vw;
     height: 20vw;
