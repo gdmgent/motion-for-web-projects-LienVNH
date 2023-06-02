@@ -1,5 +1,5 @@
 @charset "UTF-8";
-#lien1vhn :root {
+:root {
   --bgdark: #004746;
   --bgmiddark:#006E6C;
   --textcolorDark:#BF9534;
@@ -11,12 +11,13 @@
   --orangebrown:#D97F30;
   --lightbrown:#BF571B;
   --lightgray: #F2F2F2
-  // color theme Brown:
+  // color theme brown:
   --orangebrown2: #D98452;
   --salmonpink: #D9A384;
   --gray:#735E51;
   --darkbrown: #402721;
 }
+
 #lien1vhn .box {
   display: flex;
   flex-direction: row;
@@ -39,7 +40,7 @@
   height: 100%;
   width: 12.5%;
 }
-#lien1vhn .square-white {
+#lien1vhn .square-white, #lien1vhn .square-white-1 {
   background-color: white;
   border: solid 1px transparent;
   width: 100%;
@@ -59,7 +60,7 @@
   position: relative;
   max-width: 80vw;
   height: 90vh;
-  color: #735E51;
+  color: var(--gray);
   text-shadow: #BF9534 2px 2px;
   font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
