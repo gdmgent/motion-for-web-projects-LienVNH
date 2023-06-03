@@ -29,7 +29,8 @@
 
 #lien1vhn {
 
-  
+
+
   .box {
     
     display: flex;
@@ -55,116 +56,108 @@
       width: 12.5%;
     }
   }
-
-  .square-white, .square-white-1 {
+ 
+  .square-white1, .square-white2, .square-white3, .square-white4, .square-white5, .square-white6, .square-white7, .square-white8, .square-white9, .square-white10, .square-white11, .square-white12, .square-white13, .square-white14, .square-white15, .square-white16, .square-white17, .square-white18, .square-white19, .square-white20, .square-white21, .square-white22, .square-white23, .square-white24, .square-white25, .square-white26, .square-white27, .square-white28, .square-white29, .square-white30, .square-white31, .square-white32 {
     background-color: white;
     border: solid 1px transparent;
     width: 100%;
     height: 12.5%;
-
     transition: background-color 0.5s ease-in-out;
     max-width: 100%;
     max-height: 100%;
     
   }
 
-  .square-black {
+  .square-black1, .square-black2, .square-black3, .square-black4, .square-black5, .square-black6, .square-black7, .square-black8, .square-black9, .square-black10, .square-black11, .square-black12, .square-black13, .square-black14, .square-black15, .square-black16, .square-black17, .square-black18, .square-black19, .square-black20, .square-black21, .square-black22, .square-black23, .square-black24, .square-black25, .square-black26, .square-black27, .square-black28, .square-black29, .square-black30, .square-black31, .square-black32  
+  {
     background-color: black;
     border: solid 1px transparent;
     width: 100%;
     height: 12.5%;
     transition: background-color 0.5s ease-in-out;
   }
-
-
-  .intro {
-    position: relative;
-    max-width: 80vw;
-    height: 90vh;
-    color: var(--gray);
-    text-shadow: #BF9534 2px 2px;
-    font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    padding: 15px;
-    text-align: center; 
+  #intro, #king, #queen,#rook, #bishop, #knight, #pawn{
+   
+    width: 100%;
+    height: 100vh;
     
   }
 
+  .containerspace{
+  height: 150vh;
+  background: linear-gradient(#000,#010f0f,#004746,#006E6C,#BC9051,#BF9534,#735E51,#4D4135,#402721,#000);
+  position:relative;
+  z-index: -3;
+  }
 
-
-  .card {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    height: 90%vw;
-    margin-bottom: 3em;
-    border-radius: 50px;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    height: 70vw;
+  #intro {
+    max-width: 40vw;
+    color: var(--gray);
+    text-shadow: #BF9534 2px 2px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:2rem;
+    margin-left: 50%;
+    margin-right: 2rem;
+    text-align: center; 
+    opacity: 1;
+    >h1{
+      font-size: 3rem;
+      margin: 2rem;
+      color:#004746;
     }
+    >p{
+      margin:3rem;
+    }    
+  }
 
-  .card-body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    text-align: center;
-    color: #0e605f;
-      >h2 {
+  #king, #queen,#rook, #bishop, #knight, #pawn{
+    opacity: 1;
+  }
+
+  #kinggold{
+    opacity: 0;
+  }
+
+.card-body-king, .card-body-queen, .card-body-rook, .card-body-bishop, .card-body-knight, .card-body-pawn{
+  display:block;
+  margin-left: 50vw;
+  width: 30vw;
+  text-align: center;
+  color: #0e605f;
+  animation: easeIn 1s;
+  
+  
+   
+  >h2 {
         text-shadow: #BF9534 4px 4px;
         font-size: 4rem;
         } 
 
-        >p {
-          color: #D9AD66;
-          text-shadow: #735E51 2px 2px;
-          background: linear-gradient(hsla(35, 44%, 53%,0.5),hsla(179, 100%, 14%,0.5),hsla(35, 44%, 53%,0.5));
-          padding: 2rem;
-          font-weight: 600;
-          width: 50vw;
+  >p {
+      color: #D9AD66;
+      text-shadow: #735E51 2px 2px;
+      background: linear-gradient(hsla(35, 44%, 53%,0.5),hsla(179, 100%, 14%,0.5),hsla(35, 44%, 53%,0.5));
+      padding: 1rem;
+      
+      font-weight: 400;   
+      }
+}
 
-        }
-  
-
-    >button {  
-    max-width: fit-content;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    background-color:#D99C52;
-    color:#4a1501;
-    font-weight: 700;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: none;
-    box-shadow:#402721 4px 4px 4px;
-
+@keyframes easeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-}
-
-
-.containerspace{
-  height: 160vh;
-  background: linear-gradient(#000,#010f0f,#004746,#006E6C,#BC9051,#BF9534,#735E51,#4D4135,#402721,#000);
-  position:relative;
-  z-index: -2;
-  
-}
 img{
-  size:150%,
+  size:150%;
   
 }
-.rightbox {
-  width: 50px;
-  height: 50px;
-  transform: rotateY(-90deg);
-  background: yellow;
-  perspective-origin: 10cm;
-}
-}
 
+}
 
