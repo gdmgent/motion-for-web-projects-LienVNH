@@ -209,11 +209,12 @@ function lien1vhn(fase) {
         "#lien1vhn #kingbrown",
         {
           left: "7%",
-          top: "13%",
+          top: "14%",
           width: "20%",
           height: "20%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "king"
       )
@@ -277,7 +278,7 @@ function lien1vhn(fase) {
         "color"
       )*/
 
-      // Add 4 Queen  ----------------------------------------------------------------------------------------------------------Queen
+      // Add 4 Queen  ----------------------------------------------------Queen
       .add("queen")
 
       .to(
@@ -383,6 +384,7 @@ function lien1vhn(fase) {
           x: "+160",
           y: "100",
           ease: "stagger.in(1)",
+          duration: 1,
         },
         "queen"
       )
@@ -390,7 +392,7 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #queengold",
         {
-          left: "31%",
+          left: "31.5%",
           top: "48%",
           width: "23%",
           height: "23%",
@@ -426,13 +428,6 @@ function lien1vhn(fase) {
         "queen"
       )
       .to(
-        "#lien1vhn .square-white31",
-        {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
-        },
-        "queen"
-      )
-      .to(
         "#lien1vhn .square-black30",
         {
           backgroundColor: "#D9AD66",
@@ -458,7 +453,7 @@ function lien1vhn(fase) {
         "#lien1vhn #queenbrown",
         {
           left: "3%",
-          top: "14%",
+          top: "15%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
@@ -525,15 +520,7 @@ function lien1vhn(fase) {
         "rook"
       )
 
-      .from(
-        "#lien1vhn #rook",
-        {
-          x: "+600",
-          y: "+900",
-        },
-        "rook"
-      )
-      //Reset postion of the Queen gold.
+      //Reset color postion of the Queen gold.    ---------------------------------------------------Reset color postion of the Queen gold.
       .to(
         "#lien1vhn .square-white30",
         {
@@ -542,7 +529,7 @@ function lien1vhn(fase) {
         },
         "rook"
       )
-      //Adding the possible steps for the king
+      //Reset the possible steps for the king  ---------------------------------------------------Reset the possible steps for the king
       .to(
         "#lien1vhn .square-white27",
         {
@@ -585,34 +572,122 @@ function lien1vhn(fase) {
         },
         "rook"
       )
+      //Reset Coloring postion of the queen brown.    ---------------------------------------------------Reset Coloring postion of the queen brown.
+
+      .to(
+        "#lien1vhn .square-black2",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "rook"
+      )
+      //Reset the possible steps for the queen brown.    ---------------------------------------------------Reset the possible steps for the queen brown.
+      .to(
+        "#lien1vhn .square-white3",
+        {
+          backgroundColor: "white",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white2",
+        {
+          backgroundColor: "white",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white6",
+        {
+          backgroundColor: "white",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black6",
+        {
+          backgroundColor: "black",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black7",
+        {
+          backgroundColor: "black",
+        },
+        "rook"
+      )
+      // adding the Rook Gold   ---------------------------------------------------adding the Rook Gold
+      .to(
+        "#lien1vhn .card-body-rook",
+        {
+          x: "+160",
+          y: "100",
+          ease: "stagger.in(1)",
+          duration: 1,
+        },
+        "rook"
+      )
 
       .to(
         "#lien1vhn #rookgold",
         {
-          left: "54%",
-          top: "54%",
+          left: "23%",
+          top: "60%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "rook"
       )
-
+      .to(
+        "#lien1vhn #rookgold2",
+        {
+          left: "44%",
+          top: "33%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "rook"
+      )
+      // adding the Rook brown   ---------------------------------------------------adding the Rook brown
       .to(
         "#lien1vhn #rookbrown",
+
         {
-          left: "20%",
-          top: "14%",
+          left: "-5%",
+          top: "28%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn #rookbrown2",
+
+        {
+          left: "16%",
+          top: "1%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
         },
         "rook"
       )
 
-      // Add 6 BISHOP
+      // Add 6 BISHOP  ----------------------------------------------------Add 6 BISHOP
       .add("bishop")
 
       .to(
@@ -623,42 +698,73 @@ function lien1vhn(fase) {
         "bishop"
       )
 
-      .from(
-        "#lien1vhn #bishop",
+      .to(
+        "#lien1vhn .card-body-bishop",
         {
-          x: "+600",
-          y: "+900",
+          x: "+160",
+          y: "100",
+          ease: "stagger.in(1)",
+          duration: 1,
         },
         "bishop"
       )
-
       .to(
         "#lien1vhn #bishopgold",
         {
-          left: "54%",
-          top: "54%",
+          left: "26%",
+          top: "56%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn #bishopgold2",
+        {
+          left: "41%",
+          top: "38%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
         },
         "bishop"
       )
 
       .to(
         "#lien1vhn #bishopbrown",
+
         {
-          left: "20%",
-          top: "14%",
+          left: "-2%",
+          top: "23%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn #bishopbrown2",
+
+        {
+          left: "13%",
+          top: "5%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
         },
         "bishop"
       )
 
-      // Add KNIGHT
+      // Add KNIGHT ----------------------------------------------------Add KNIGHT
       .add("knight")
 
       .to(
@@ -669,39 +775,71 @@ function lien1vhn(fase) {
         "knight"
       )
 
-      .from(
-        "#lien1vhn #knight",
+      .to(
+        "#lien1vhn .card-body-knight",
         {
-          x: "+600",
-          y: "+900",
+          x: "+160",
+          y: "100",
+          ease: "stagger.in(1)",
+          duration: 1,
         },
         "knight"
       )
-
       .to(
         "#lien1vhn #knightgold",
         {
-          left: "54%",
-          top: "54%",
+          left: "29%",
+          top: "52%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-          rotateY: "180",
+          opacity: 1,
+          rotateY: "+145",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn #knightgold2",
+        {
+          left: "39%",
+          top: "43%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+          rotateY: "+150",
         },
         "knight"
       )
 
       .to(
         "#lien1vhn #knightbrown",
+
         {
-          left: "20%",
-          top: "14%",
+          left: "0%",
+          top: "19%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-          rotateY: "180",
+          opacity: 1,
+          rotateY: "+145",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn #knightbrown2",
+        {
+          left: "10%",
+          top: "9%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+          rotateY: "+145",
         },
         "knight"
       )
@@ -717,11 +855,12 @@ function lien1vhn(fase) {
         "pawn"
       )
 
-      .from(
-        "#lien1vhn #pawn",
+      .to(
+        "#lien1vhn .card-body-pawn",
         {
-          x: "+400",
-          y: "+900",
+          x: "+160",
+          y: "100",
+          ease: "stagger.in(1)",
         },
         "pawn"
       )
@@ -729,26 +868,27 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown1",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "24%",
+          top: "13%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
-          delay: 1,
+          opacity: 1,
         },
         "pawn"
       )
 
       .to(
-        "#lien1vhn #pawngold2",
+        "#lien1vhn #pawngold1",
         {
-          left: "54%",
-          top: "54%",
-          width: "23%",
-          height: "23%",
+          left: "37%",
+          top: "44%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -756,12 +896,13 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown2",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "23%",
+          top: "19%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -775,6 +916,7 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -782,12 +924,13 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown3",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "18%",
+          top: "22%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -801,6 +944,7 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -808,12 +952,13 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown4",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "16%",
+          top: "26%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -834,12 +979,13 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown5",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "13%",
+          top: "30%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -860,12 +1006,13 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown6",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "10%",
+          top: "34%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -886,12 +1033,13 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown7",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "7%",
+          top: "38%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
       )
@@ -912,14 +1060,36 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawnbrown8",
         {
-          left: "20%",
-          top: "14%",
-          width: "23%",
-          height: "23%",
+          left: "4%",
+          top: "42%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
+          opacity: 1,
         },
         "pawn"
+      )
+      // add closure
+      .add("closure")
+
+      .to(
+        "#lien1vhn .box",
+        {
+          scale: "2",
+        },
+        "closure"
+      )
+
+      .to(
+        "#lien1vhn .card-body-closure",
+        {
+          x: "+160",
+          y: "100",
+          ease: "stagger.in(1)",
+          duration: 1,
+        },
+        "closure"
       )
 
       .add("reset")

@@ -54,7 +54,7 @@
   height: 12.5%;
   transition: background-color 0.5s ease-in-out;
 }
-#lien1vhn #intro, #lien1vhn #king, #lien1vhn #queen, #lien1vhn #rook, #lien1vhn #bishop, #lien1vhn #knight, #lien1vhn #pawn {
+#lien1vhn #intro, #lien1vhn #king, #lien1vhn #queen, #lien1vhn #rook, #lien1vhn #bishop, #lien1vhn #knight, #lien1vhn #pawn, #lien1vhn #closure {
   width: 100%;
   height: 100vh;
 }
@@ -78,19 +78,19 @@
 #lien1vhn #intro > p {
   margin: 3rem;
 }
-#lien1vhn .card-body-king, #lien1vhn .card-body-queen, #lien1vhn .card-body-rook, #lien1vhn .card-body-bishop, #lien1vhn .card-body-knight, #lien1vhn .card-body-pawn {
+#lien1vhn .card-body-king, #lien1vhn .card-body-queen, #lien1vhn .card-body-rook, #lien1vhn .card-body-bishop, #lien1vhn .card-body-knight, #lien1vhn .card-body-pawn, #lien1vhn .card-body-closure {
   display: block;
   margin-left: 50vw;
   width: 30vw;
   text-align: center;
   color: #0e605f;
-  animation: easeIn 1s;
+  animation: easeIn;
 }
-#lien1vhn .card-body-king > h2, #lien1vhn .card-body-queen > h2, #lien1vhn .card-body-rook > h2, #lien1vhn .card-body-bishop > h2, #lien1vhn .card-body-knight > h2, #lien1vhn .card-body-pawn > h2 {
+#lien1vhn .card-body-king > h2, #lien1vhn .card-body-queen > h2, #lien1vhn .card-body-rook > h2, #lien1vhn .card-body-bishop > h2, #lien1vhn .card-body-knight > h2, #lien1vhn .card-body-pawn > h2, #lien1vhn .card-body-closure > h2 {
   text-shadow: #BF9534 4px 4px;
   font-size: 4rem;
 }
-#lien1vhn .card-body-king > p, #lien1vhn .card-body-queen > p, #lien1vhn .card-body-rook > p, #lien1vhn .card-body-bishop > p, #lien1vhn .card-body-knight > p, #lien1vhn .card-body-pawn > p {
+#lien1vhn .card-body-king > p, #lien1vhn .card-body-queen > p, #lien1vhn .card-body-rook > p, #lien1vhn .card-body-bishop > p, #lien1vhn .card-body-knight > p, #lien1vhn .card-body-pawn > p, #lien1vhn .card-body-closure > p {
   color: #D9AD66;
   text-shadow: #735E51 2px 2px;
   background: linear-gradient(hsla(35, 44%, 53%, 0.5), hsla(179, 100%, 14%, 0.5), hsla(35, 44%, 53%, 0.5));
@@ -107,7 +107,7 @@
     transform: translateY(0);
   }
 }
-#lien1vhn #kinggold, #lien1vhn #queengold, #lien1vhn #rookgold, #lien1vhn #bishopgold, #lien1vhn #knightgold, #lien1vhn #pawngold #kingbrown, #lien1vhn #queenbrown, #lien1vhn #rookbrown, #lien1vhn #bishopbrown, #lien1vhn #knightbrown, #lien1vhn #pawnbrown, #lien1vhn #queencenter {
+#lien1vhn #kinggold, #lien1vhn #queengold, #lien1vhn #rookgold, #lien1vhn #bishopgold, #lien1vhn #knightgold, #lien1vhn #kingbrown, #lien1vhn #queenbrown, #lien1vhn #rookbrown, #lien1vhn #bishopbrown, #lien1vhn #knightbrown, #lien1vhn #pawnbrown, #lien1vhn #rookbrown2, #lien1vhn #rookgold2, #lien1vhn #bishopgold2, #lien1vhn #bishopbrown2, #lien1vhn #knightgold2, #lien1vhn #knightbrown2, #lien1vhn #pawngold1, #lien1vhn #pawngold2, #lien1vhn #pawngold3, #lien1vhn #pawngold4, #lien1vhn #pawngold5, #lien1vhn #pawngold6, #lien1vhn #pawngold7, #lien1vhn #pawngold8, #lien1vhn #pawnbrown1, #lien1vhn #pawnbrown2, #lien1vhn #pawnbrown3, #lien1vhn #pawnbrown4, #lien1vhn #pawnbrown5, #lien1vhn #pawnbrown6, #lien1vhn #pawnbrown7, #lien1vhn #pawnbrown8 {
   opacity: 0;
 }
 

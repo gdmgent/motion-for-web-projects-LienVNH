@@ -75,7 +75,7 @@
     transition: background-color 0.5s ease-in-out;
   }
 
-  #intro, #king, #queen,#rook, #bishop, #knight, #pawn {
+  #intro, #king, #queen,#rook, #bishop, #knight, #pawn,#closure {
    
     width: 100%;
     height: 100vh;
@@ -105,13 +105,13 @@
 
 
 
-.card-body-king, .card-body-queen, .card-body-rook, .card-body-bishop, .card-body-knight, .card-body-pawn{
+.card-body-king, .card-body-queen, .card-body-rook, .card-body-bishop, .card-body-knight, .card-body-pawn, .card-body-closure{
   display:block;
   margin-left: 50vw;
   width: 30vw;
   text-align: center;
   color: #0e605f;
-  animation: easeIn 1s;
+  animation: easeIn;
   
   
    
@@ -140,7 +140,7 @@
     }
   }
 
-#kinggold, #queengold, #rookgold, #bishopgold, #knightgold, #pawngold #kingbrown, #queenbrown, #rookbrown, #bishopbrown, #knightbrown, #pawnbrown, #queencenter {
+#kinggold, #queengold, #rookgold, #bishopgold, #knightgold, #kingbrown, #queenbrown, #rookbrown, #bishopbrown, #knightbrown, #pawnbrown, #rookbrown2,#rookgold2, #bishopgold2, #bishopbrown2, #knightgold2, #knightbrown2, #pawngold1, #pawngold2, #pawngold3, #pawngold4, #pawngold5, #pawngold6, #pawngold7, #pawngold8, #pawnbrown1, #pawnbrown2, #pawnbrown3, #pawnbrown4, #pawnbrown5, #pawnbrown6, #pawnbrown7, #pawnbrown8 {
   opacity:0
 
 }
