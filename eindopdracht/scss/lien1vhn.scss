@@ -3,33 +3,18 @@
     // colors
 
     --bgdark: #004746;
-    --bgmiddark:hsl(179, 100%, 22%); 
+    --bgmiddark:#00706e; 
 
     --textcolorDark:#BF9534;
     --textcolor: #DBAB3B;
-
-    --gradiëntGold: #BC9051,hsl(37, 60%, 63%),#FFFFFF;
-    --gradiëntBrown: #4D4135,#493C33,#FFFFFF;
-
-    // color theme Gold: 
-    --yellow-beige: #F2B950;
-    --beige:hsl(33, 64%, 59%);
-    --orangebrown:#D97F30;
-    --lightbrown:#BF571B;
-    --lightgray: #F2F2F2
-
-    // color theme brown: 
-    --orangebrown2: #D98452;
-    --salmonpink: #D9A384;
+    --textp: #D9AD66;
+    --shadow: #735E51
     --gray:#735E51;
     --darkbrown: #402721;
 
-    
   }
 
 #lien1vhn {
-
-
 
   .box {
     
@@ -85,8 +70,8 @@
   #intro {
     position: relative;
     max-width: 40vw;
-    color: var(--gray);
-    text-shadow: #BF9534 2px 2px;
+    color: var(--textp);
+    text-shadow: var(--textcolorDark) 2px 2px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:2rem;
@@ -96,33 +81,31 @@
     >h1{
       font-size: 3rem;
       margin: 2rem;
-      color:#004746;
+      color:var(--bgmiddark);
     }
     >p{
       margin:3rem;
     }    
   }
 
-
-
 .card-body-king, .card-body-queen, .card-body-rook, .card-body-bishop, .card-body-knight, .card-body-pawn, .card-body-closure{
   display:block;
   margin-left: 50vw;
   width: 30vw;
   text-align: center;
-  color: #0e605f;
+  color:var(--bgmiddark);
   animation: easeIn;
   
   
    
   >h2 {
-        text-shadow: #BF9534 4px 4px;
+        text-shadow: var(--textcolor) 4px 4px;
         font-size: 4rem;
         } 
 
   >p {
-      color: #D9AD66;
-      text-shadow: #735E51 2px 2px;
+      color: var(--textp);
+      text-shadow: var(--shadow) 2px 2px;
       background: linear-gradient(hsla(35, 44%, 53%,0.5),hsla(179, 100%, 14%,0.5),hsla(35, 44%, 53%,0.5));
       padding: 1rem;   
       font-weight: 400;   
@@ -144,52 +127,32 @@
   opacity:0
 
 }
-
 }
-/* overview color tegels in javascript
-   //Coloring postion of the king gold.
-      .to(
-        "#lien1vhn .square-black31",
-        {
-          border: "2px solid #BF571B",
-          backgroundColor: "#D9AD66",
-        },
-        "king"
-      )
-      //Adding the possible steps for the king
-      .to(
-        "#lien1vhn .square-black27",
-        {
-          backgroundColor: "#D9AD66",
-        },
-        "king"
-      )
-      .to(
-        "#lien1vhn .square-black26",
-        {
-          backgroundColor: "#D9AD66",
-        },
-        "king"
-      )
-      .to(
-        "#lien1vhn .square-white31",
-        {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
-        },
-        "king"
-      )
-      .to(
-        "#lien1vhn .square-white30",
-        {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
-        },
-        "king"
-      )
-      .to(
-        "#lien1vhn .square-white27",
-        {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
-        },
-        "king"
-      )
-*/
+.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    var(--darkbrown) 0%,
+    var(--bgdark) 29%,
+    var(--textcolor)67%,
+    var(--textp) 100%,
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 3rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

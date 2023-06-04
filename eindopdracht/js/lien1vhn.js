@@ -163,7 +163,7 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .square-black31",
         {
-          border: "2px solid #BF571B",
+          border: "2px solid #004746",
           backgroundColor: "#D9AD66",
         },
         "king"
@@ -222,8 +222,8 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .square-white3",
         {
-          border: "2px solid #BF571B",
-          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
         },
         "king"
       )
@@ -231,35 +231,35 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .square-white6",
         {
-          backgroundColor: "#D9AD66",
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
         },
         "king"
       )
       .to(
         "#lien1vhn .square-white7",
         {
-          backgroundColor: "#D9AD66",
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
         },
         "king"
       )
       .to(
         "#lien1vhn .square-black2",
         {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          backgroundColor: "#D9AD66",
         },
         "king"
       )
       .to(
         "#lien1vhn .square-black3",
         {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          backgroundColor: "#D9AD66",
         },
         "king"
       )
       .to(
         "#lien1vhn .square-black7",
         {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          backgroundColor: "#D9AD66",
         },
         "king"
       )
@@ -407,7 +407,7 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .square-white30",
         {
-          border: "2px solid #BF571B",
+          border: "2px solid #004746",
           backgroundColor: "hsla(179, 100%, 22%, 0.5)",
         },
         "queen"
@@ -467,8 +467,8 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .square-black2",
         {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
-          border: "2px solid #BF571B",
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
         },
         "queen"
       )
@@ -476,21 +476,21 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .square-white3",
         {
-          backgroundColor: "#D9AD66",
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
         },
         "queen"
       )
       .to(
         "#lien1vhn .square-white2",
         {
-          backgroundColor: "#D9AD66",
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
         },
         "queen"
       )
       .to(
         "#lien1vhn .square-white6",
         {
-          backgroundColor: "#D9AD66",
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
         },
         "queen"
       )
@@ -498,14 +498,14 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .square-black6",
         {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          backgroundColor: "#D9AD66",
         },
         "queen"
       )
       .to(
         "#lien1vhn .square-black7",
         {
-          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          backgroundColor: "#D9AD66",
         },
         "queen"
       )
@@ -657,6 +657,225 @@ function lien1vhn(fase) {
         },
         "rook"
       )
+      /*Adding the possible steps for the Rook .    ---------------------------------------------------Adding the possible steps for the Rook Gold.*/
+
+      .to(
+        "#lien1vhn .square-white1",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black4",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white32",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black29",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white9",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black5",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white17",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black13",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white25",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black21",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      // Row 1
+      .to(
+        "#lien1vhn .square-white2",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white3",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white4",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black1",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black2",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black3",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      // Row 8 ---------------------------------------------------Row 8
+      .to(
+        "#lien1vhn .square-black32",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black31",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black30",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-white29",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      // Row horizontal 1---------------------------------------------------Row horizontal 1
+      .to(
+        "#lien1vhn .square-black12",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-white8",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white16",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black20",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-black28",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
+      .to(
+        "#lien1vhn .square-white24",
+        {
+          backgroundColor: "#00706e",
+        },
+        "rook"
+      )
+
       // adding the Rook brown   ---------------------------------------------------adding the Rook brown
       .to(
         "#lien1vhn #rookbrown",
@@ -697,7 +916,226 @@ function lien1vhn(fase) {
         },
         "bishop"
       )
+      //Reset color steps Rook---------------------------------------------------Reset color steps Rook
+      /*Adding the possible steps for the Rook .    ---------------------------------------------------Adding the possible steps for the Rook Gold.*/
 
+      .to(
+        "#lien1vhn .square-white1",
+        {
+          backgroundColor: "white",
+          border: "none",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black4",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white32",
+        {
+          backgroundColor: "white",
+          border: "none",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black29",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white9",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black5",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white17",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black13",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white25",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black21",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+      // Row 1
+      .to(
+        "#lien1vhn .square-white2",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white3",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white4",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black1",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black2",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black3",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      // Row 8 ---------------------------------------------------Row 8
+      .to(
+        "#lien1vhn .square-black32",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black31",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black30",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-white29",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      // Row horizontal 1---------------------------------------------------Row horizontal 1
+      .to(
+        "#lien1vhn .square-black12",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-white8",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-white16",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black20",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-black28",
+        {
+          backgroundColor: "black",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn .square-white24",
+        {
+          backgroundColor: "white",
+        },
+        "bishop"
+      )
+      // add 6 BISHOP  ----------------------------------------------------add 6 BISHOP
       .to(
         "#lien1vhn .card-body-bishop",
         {
@@ -750,6 +1188,62 @@ function lien1vhn(fase) {
         "bishop"
       )
       .to(
+        "#lien1vhn .square-black1",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black6",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black10",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black15",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black19",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black24",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "bishop"
+      )
+      .to(
+        "#lien1vhn .square-black28",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #004746",
+        },
+        "bishop"
+      )
+      .to(
         "#lien1vhn #bishopbrown2",
 
         {
@@ -774,7 +1268,62 @@ function lien1vhn(fase) {
         },
         "knight"
       )
-
+      .to(
+        "#lien1vhn .square-black1",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-black6",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-black10",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-black15",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-black19",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-black24",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-black28",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "knight"
+      )
       .to(
         "#lien1vhn .card-body-knight",
         {
@@ -830,6 +1379,46 @@ function lien1vhn(fase) {
         "knight"
       )
       .to(
+        "#lien1vhn .square-black3",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-white6",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-white8",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-white11",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "knight"
+      )
+      .to(
+        "#lien1vhn .square-white12",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "knight"
+      )
+      .to(
         "#lien1vhn #knightbrown2",
         {
           left: "10%",
@@ -844,7 +1433,7 @@ function lien1vhn(fase) {
         "knight"
       )
 
-      // Add pawn
+      // Add pawn ----------------------------------------------------Add pawn
       .add("pawn")
 
       .to(
@@ -854,13 +1443,74 @@ function lien1vhn(fase) {
         },
         "pawn"
       )
-
+      .to(
+        "#lien1vhn .square-black3",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn .square-white6",
+        {
+          backgroundColor: "white",
+          border: "none",
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn .square-white8",
+        {
+          backgroundColor: "white",
+          border: "none",
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn .square-white11",
+        {
+          backgroundColor: "white",
+          border: "none",
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn .square-white12",
+        {
+          backgroundColor: "white",
+          border: "none",
+        },
+        "pawn"
+      )
       .to(
         "#lien1vhn .card-body-pawn",
         {
           x: "+160",
           y: "100",
           ease: "stagger.in(1)",
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn .square-black7",
+        {
+          backgroundColor: "#D9AD66",
+          border: "2px solid #004746",
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn .square-black15",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn .square-white11",
+        {
+          backgroundColor: "#D9AD66",
         },
         "pawn"
       )
@@ -1086,7 +1736,28 @@ function lien1vhn(fase) {
       )
       // add closure
       .add("closure")
-
+      .to(
+        "#lien1vhn .square-black7",
+        {
+          backgroundColor: "black",
+          border: "none",
+        },
+        "closure"
+      )
+      .to(
+        "#lien1vhn .square-black15",
+        {
+          backgroundColor: "black",
+        },
+        "closure"
+      )
+      .to(
+        "#lien1vhn .square-white11",
+        {
+          backgroundColor: "white",
+        },
+        "closure"
+      )
       .to(
         "#lien1vhn .box",
         {
@@ -1098,7 +1769,7 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .card-body-closure",
         {
-          x: "+160",
+          x: "+190",
           y: "100",
           ease: "stagger.in(1)",
           duration: 1,
@@ -1125,11 +1796,11 @@ function lien1vhn(fase) {
           border: "0px solid darkgrey",
           x: "100%",
           rotate: "45deg",
-          backgroundColor: "white"
+          backgroundColor: "white",
         },
         "reset"
       )
-      
+
       .to(
         "#lien1vhn .card-body-closure",
         {
@@ -1461,7 +2132,7 @@ function lien1vhn(fase) {
           ease: "back.out(1)",
         },
         "reset"
-    )
+      )
     
   
   }
