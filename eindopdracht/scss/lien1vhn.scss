@@ -3,17 +3,17 @@
     // colors
 
     --bgdark: #004746;
-    --bgmiddark:#006E6C; 
+    --bgmiddark:hsl(179, 100%, 22%); 
 
     --textcolorDark:#BF9534;
     --textcolor: #DBAB3B;
 
-    --gradiëntGold: #BC9051,#D9AD66,#FFFFFF;
+    --gradiëntGold: #BC9051,hsl(37, 60%, 63%),#FFFFFF;
     --gradiëntBrown: #4D4135,#493C33,#FFFFFF;
 
     // color theme Gold: 
     --yellow-beige: #F2B950;
-    --beige:#D99C52;
+    --beige:hsl(33, 64%, 59%);
     --orangebrown:#D97F30;
     --lightbrown:#BF571B;
     --lightgray: #F2F2F2
@@ -63,9 +63,7 @@
     width: 100%;
     height: 12.5%;
     transition: background-color 0.5s ease-in-out;
-    max-width: 100%;
-    max-height: 100%;
-    
+  
   }
 
   .square-black1, .square-black2, .square-black3, .square-black4, .square-black5, .square-black6, .square-black7, .square-black8, .square-black9, .square-black10, .square-black11, .square-black12, .square-black13, .square-black14, .square-black15, .square-black16, .square-black17, .square-black18, .square-black19, .square-black20, .square-black21, .square-black22, .square-black23, .square-black24, .square-black25, .square-black26, .square-black27, .square-black28, .square-black29, .square-black30, .square-black31, .square-black32  
@@ -76,21 +74,16 @@
     height: 12.5%;
     transition: background-color 0.5s ease-in-out;
   }
-  #intro, #king, #queen,#rook, #bishop, #knight, #pawn{
+
+  #intro, #king, #queen,#rook, #bishop, #knight, #pawn {
    
     width: 100%;
     height: 100vh;
-    
-  }
-
-  .containerspace{
-  height: 150vh;
-  background: linear-gradient(#000,#010f0f,#004746,#006E6C,#BC9051,#BF9534,#735E51,#4D4135,#402721,#000);
-  position:relative;
-  z-index: -3;
+   
   }
 
   #intro {
+    position: relative;
     max-width: 40vw;
     color: var(--gray);
     text-shadow: #BF9534 2px 2px;
@@ -100,7 +93,6 @@
     margin-left: 50%;
     margin-right: 2rem;
     text-align: center; 
-    opacity: 1;
     >h1{
       font-size: 3rem;
       margin: 2rem;
@@ -111,13 +103,7 @@
     }    
   }
 
-  #king, #queen,#rook, #bishop, #knight, #pawn{
-    opacity: 1;
-  }
 
-  #kinggold{
-    opacity: 0;
-  }
 
 .card-body-king, .card-body-queen, .card-body-rook, .card-body-bishop, .card-body-knight, .card-body-pawn{
   display:block;
@@ -138,8 +124,7 @@
       color: #D9AD66;
       text-shadow: #735E51 2px 2px;
       background: linear-gradient(hsla(35, 44%, 53%,0.5),hsla(179, 100%, 14%,0.5),hsla(35, 44%, 53%,0.5));
-      padding: 1rem;
-      
+      padding: 1rem;   
       font-weight: 400;   
       }
 }
@@ -154,10 +139,57 @@
       transform: translateY(0);
     }
   }
-img{
-  size:150%;
-  
-}
+
+#kinggold, #queengold, #rookgold, #bishopgold, #knightgold, #pawngold #kingbrown, #queenbrown, #rookbrown, #bishopbrown, #knightbrown, #pawnbrown, #queencenter {
+  opacity:0
 
 }
 
+}
+/* overview color tegels in javascript
+   //Coloring postion of the king gold.
+      .to(
+        "#lien1vhn .square-black31",
+        {
+          border: "2px solid #BF571B",
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      //Adding the possible steps for the king
+      .to(
+        "#lien1vhn .square-black27",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-black26",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white27",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+*/

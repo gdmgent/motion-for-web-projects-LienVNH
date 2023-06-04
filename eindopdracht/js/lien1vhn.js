@@ -8,7 +8,7 @@ function lien1vhn(fase) {
     // eigen animatie schrijven
     console.log("lien1vhn.js: init")
     section.tl
-      // Add 1 : Board
+      // Add 1 : Board  ----------------------------------------------------------------------------------------------------------Board
       .add("intro")
 
       .from(
@@ -17,38 +17,46 @@ function lien1vhn(fase) {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-          
-        }, "board")
-      
+        },
+        "intro"
+      )
+
       .from(
         "#lien1vhn .square-black5",
         {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-        },"board")
+        },
+        "intro"
+      )
       .from(
         "#lien1vhn .square-white9",
         {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-        },"board")
+        },
+        "intro"
+      )
       .from(
         "#lien1vhn .square-black13",
         {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-          
-        }, "board")
+        },
+        "intro"
+      )
       .from(
         "#lien1vhn .square-white17",
         {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-        }, "board")
+        },
+        "intro"
+      )
 
       .from(
         "#lien1vhn .square-black21",
@@ -56,24 +64,30 @@ function lien1vhn(fase) {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-        }, "board")
-      
+        },
+        "intro"
+      )
+
       .from(
         "#lien1vhn .square-white25",
         {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-        }, "board")
-      
+        },
+        "intro"
+      )
+
       .from(
         "#lien1vhn .square-black29",
         {
           width: "20vw",
           height: "20vw",
           opacity: 0,
-        }, "board")
-    
+        },
+        "intro"
+      )
+
       .to(
         "#lien1vhn .box",
         {
@@ -85,69 +99,172 @@ function lien1vhn(fase) {
           border: "4px solid darkgrey",
           top: "30%",
           left: "20%",
-        },"board")
+        },
+        "intro"
+      )
 
-// Add 2 : INTRO Tekst 
+      // Add 2 : INTRO Tekst  ----------------------------------------------------------------------------------------------------------INTRO Tekst
 
-      .add("intro")
-       .to("#lien1vhn .box",
+      .add("start")
+      .to(
+        "#lien1vhn .box",
         {
           scale: "2",
-        }, "intro")
+        },
+        "start"
+      )
 
-      .from("#lien1vhn #intro",
+      .from(
+        "#lien1vhn #intro",
         {
           x: "+160",
           y: "+700",
           ease: "ease.in",
-          opacity:1,  
-        }, "intro")
-     
-      
-// Add 3 : KING 
+        },
+        "start"
+      )
+
+      // Add 3 : KING----------------------------------------------------------------------------------------------------------KING
       .add("king")
 
-      .to("#lien1vhn .box",
+      .to(
+        "#lien1vhn .box",
         {
           scale: "2",
-        }, "king")
-      
-      .from("#lien1vhn #king",
+        },
+        "king"
+      )
+
+      .to(
+        "#lien1vhn .card-body-king",
         {
           x: "+160",
-          y: "+700",
-          ease: "ease.in",
-          opacity:1,  
-        }, "king")
-          
-    
-      
-      .from("#lien1vhn #kinggold",
-        {
-          left: "20%",
-          top: "30%",
-          width: "23%",
-          height: "23%",
-          objectFit: "contain",
-          position: "fixed",
-        }, "intro")
-                
-      .to("#lien1vhn #kingbrown",
-        {
-          left: "27%",
-          top: "10%",
-          width: "23%",
-          height: "23%",
-          objectFit: "contain",
-          position: "fixed",
-        },"intro")
-// hier stappen nog toevoegen van de koning op het bord 
-      .to("#lien1vhn .square-white16",
-        {
-          backgroundColor: "#2b6cb4",
-        }, "king")
+          y: "100",
+          ease: "stagger.in(1)",
+          duration: 1,
+        },
+        "king"
+      )
 
-      // testje kleur die werkte dus even laten staan tot alles goed werkt 
+      .to(
+        "#lien1vhn #kinggold",
+        {
+          left: "36%",
+          top: "47%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "king"
+      )
+      //Coloring postion of the king gold.----------------------------------------------------------------------------------------Coloring postion of the king gold.
+      .to(
+        "#lien1vhn .square-black31",
+        {
+          border: "2px solid #BF571B",
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      //Adding the possible steps for the king
+      .to(
+        "#lien1vhn .square-black27",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-black26",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white27",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+
+      .to(
+        "#lien1vhn #kingbrown",
+        {
+          left: "7%",
+          top: "13%",
+          width: "20%",
+          height: "20%",
+          objectFit: "contain",
+          position: "fixed",
+        },
+        "king"
+      )
+      //Coloring postion of the king brown.----------------------------------------------------------------------------------------Coloring postion of the king brown.
+      .to(
+        "#lien1vhn .square-white3",
+        {
+          border: "2px solid #BF571B",
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      //Adding the possible steps for the king
+      .to(
+        "#lien1vhn .square-white6",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white7",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-black2",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-black3",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-black7",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+
+      // To do verwijderen als code klaar staat
+      // testje kleur die werkte dus even laten staan tot alles goed werkt
       // Animation board tegels: Kleur of aanpassing boord per tegel.
       //.add("color")
       /*.to(
@@ -160,63 +277,315 @@ function lien1vhn(fase) {
         "color"
       )*/
 
-// Add 4 Queen 
+      // Add 4 Queen  ----------------------------------------------------------------------------------------------------------Queen
       .add("queen")
 
       .to(
         "#lien1vhn .box",
         {
           scale: "2",
-        }, "queen")
-      .to("#lien1vhn #kinggold",
+        },
+        "queen"
+      )
+      //Reset Coloring postion of the king gold.  ---------------------------------------------------Reset Coloring postion of the king gold.
+      .to(
+        "#lien1vhn .square-black31",
         {
-          scale: "1",
-        }, "board")
-
-      .from("#lien1vhn .card-body-queen",
+          border: "none",
+          backgroundColor: "black",
+        },
+        "queen"
+      )
+      //Reset the possible steps for the king
+      .to(
+        "#lien1vhn .square-black27",
         {
-          x: "+600",
-          y: "+900",
-          opacity:1,  
-        }, "queen")
-      
+          backgroundColor: "black",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black26",
+        {
+          backgroundColor: "black",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "white",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          backgroundColor: "white",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white27",
+        {
+          backgroundColor: "white",
+        },
+        "queen"
+      )
+      //Reset postion of the king brown.  ---------------------------------------------------Reset postion of the king brown.
+      .to(
+        "#lien1vhn .square-white3",
+        {
+          border: "none",
+          backgroundColor: "white",
+        },
+        "queen"
+      )
+      //Reset the possible steps for the king brown ---------------------------------------------------Reset the possible steps for the king brown
+      .to(
+        "#lien1vhn .square-white6",
+        {
+          backgroundColor: "white",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white7",
+        {
+          backgroundColor: "white",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black2",
+        {
+          backgroundColor: "black",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black3",
+        {
+          backgroundColor: "black",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black7",
+        {
+          backgroundColor: "black",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .card-body-queen",
+        {
+          x: "+160",
+          y: "100",
+          ease: "stagger.in(1)",
+        },
+        "queen"
+      )
+      // position of the Queen gold.  ---------------------------------------------------position of the Queen gold.
       .to(
         "#lien1vhn #queengold",
         {
-          left: "52%",
-          top: "50%",
+          left: "31%",
+          top: "48%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        }, "intro")
-      
+          opacity: 1,
+        },
+        "queen"
+      )
+
+      //Coloring postion of the Queen gold .  ---------------------------------------------------Coloring postion of the Queen gold .
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          border: "2px solid #BF571B",
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "queen"
+      )
+      //Adding the possible steps for the Queen gold  ---------------------------------------------------Adding the possible steps for the Queen gold
+      .to(
+        "#lien1vhn .square-white27",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black31",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black30",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white26",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black26",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "queen"
+      )
+      // adding the queen brown   ---------------------------------------------------adding the queen brown
       .to(
         "#lien1vhn #queenbrown",
         {
-          left: "23%",
-          top: "12%",
+          left: "3%",
+          top: "14%",
           width: "23%",
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"intro")
+          opacity: 1,
+        },
+        "queen"
+      )
+      //Coloring postion of the queen brown.    ---------------------------------------------------Coloring postion of the queen brown.
 
-// Add 5 ROOK 
+      .to(
+        "#lien1vhn .square-black2",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+          border: "2px solid #BF571B",
+        },
+        "queen"
+      )
+      //Adding the possible steps for the queen brown.    ---------------------------------------------------Adding the possible steps for the queen brown.
+      .to(
+        "#lien1vhn .square-white3",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white2",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-white6",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "queen"
+      )
+
+      .to(
+        "#lien1vhn .square-black6",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "queen"
+      )
+      .to(
+        "#lien1vhn .square-black7",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "queen"
+      )
+
+      // Add 5 ROOK   -----------------------------------------------------------------------------------------Add 5 ROOK
       .add("rook")
       .to(
         "#lien1vhn .box",
         {
           scale: "2",
-        },"rook")
+        },
+        "rook"
+      )
 
-      .from("#lien1vhn #rook",
+      .from(
+        "#lien1vhn #rook",
         {
           x: "+600",
           y: "+900",
-          opacity:1,  
-        }, "rook")
-      
+        },
+        "rook"
+      )
+      //Reset postion of the Queen gold.
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          border: "none",
+          backgroundColor: "white",
+        },
+        "rook"
+      )
+      //Adding the possible steps for the king
+      .to(
+        "#lien1vhn .square-white27",
+        {
+          backgroundColor: "white",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black31",
+        {
+          backgroundColor: "black",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "white",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black30",
+        {
+          backgroundColor: "black",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-white26",
+        {
+          backgroundColor: "white",
+        },
+        "rook"
+      )
+      .to(
+        "#lien1vhn .square-black26",
+        {
+          backgroundColor: "black",
+        },
+        "rook"
+      )
+
       .to(
         "#lien1vhn #rookgold",
         {
@@ -226,8 +595,10 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        }, "rook")
-      
+        },
+        "rook"
+      )
+
       .to(
         "#lien1vhn #rookbrown",
         {
@@ -237,25 +608,32 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"rook")
+        },
+        "rook"
+      )
 
-// Add 6 BISHOP 
+      // Add 6 BISHOP
       .add("bishop")
 
       .to(
         "#lien1vhn .box",
         {
           scale: "2",
-        },"bishop")
-      
-      .from("#lien1vhn #bishop",
+        },
+        "bishop"
+      )
+
+      .from(
+        "#lien1vhn #bishop",
         {
           x: "+600",
           y: "+900",
-          opacity:1,  
-        }, "bishop")
-      
-      .to("#lien1vhn #bishopgold",
+        },
+        "bishop"
+      )
+
+      .to(
+        "#lien1vhn #bishopgold",
         {
           left: "54%",
           top: "54%",
@@ -263,9 +641,12 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        }, "bishop") 
+        },
+        "bishop"
+      )
 
-      .to("#lien1vhn #bishopbrown",
+      .to(
+        "#lien1vhn #bishopbrown",
         {
           left: "20%",
           top: "14%",
@@ -273,23 +654,29 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"bishop")
+        },
+        "bishop"
+      )
 
-// Add KNIGHT 
+      // Add KNIGHT
       .add("knight")
 
       .to(
         "#lien1vhn .box",
         {
           scale: "2",
-        }, "knight")
-      
-      .from("#lien1vhn #knight",
+        },
+        "knight"
+      )
+
+      .from(
+        "#lien1vhn #knight",
         {
           x: "+600",
           y: "+900",
-          opacity:1,  
-        },"knight")
+        },
+        "knight"
+      )
 
       .to(
         "#lien1vhn #knightgold",
@@ -301,7 +688,9 @@ function lien1vhn(fase) {
           objectFit: "contain",
           position: "fixed",
           rotateY: "180",
-        },"knight")
+        },
+        "knight"
+      )
 
       .to(
         "#lien1vhn #knightbrown",
@@ -313,24 +702,30 @@ function lien1vhn(fase) {
           objectFit: "contain",
           position: "fixed",
           rotateY: "180",
-        },"knight")
+        },
+        "knight"
+      )
 
-// Add pawn 
+      // Add pawn
       .add("pawn")
 
       .to(
         "#lien1vhn .box",
         {
           scale: "2",
-        },"pawn")
+        },
+        "pawn"
+      )
 
-      .from("#lien1vhn #pawn",
+      .from(
+        "#lien1vhn #pawn",
         {
-          x: "+600",
+          x: "+400",
           y: "+900",
-          opacity:1,  
-        }, "pawn")
-      
+        },
+        "pawn"
+      )
+
       .to(
         "#lien1vhn #pawnbrown1",
         {
@@ -341,8 +736,10 @@ function lien1vhn(fase) {
           objectFit: "contain",
           position: "fixed",
           delay: 1,
-        }, "pawn")
-      
+        },
+        "pawn"
+      )
+
       .to(
         "#lien1vhn #pawngold2",
         {
@@ -352,7 +749,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawnbrown2",
@@ -363,8 +762,10 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        }, "pawn")
-      
+        },
+        "pawn"
+      )
+
       .to(
         "#lien1vhn #pawngold3",
         {
@@ -374,7 +775,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawnbrown3",
@@ -385,8 +788,10 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
-      
+        },
+        "pawn"
+      )
+
       .to(
         "#lien1vhn #pawngold4",
         {
@@ -396,7 +801,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawnbrown4",
@@ -407,8 +814,10 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        }, "pawn")
-      
+        },
+        "pawn"
+      )
+
       .to(
         "#lien1vhn #pawngold5",
         {
@@ -418,7 +827,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawnbrown5",
@@ -429,7 +840,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawngold6",
@@ -440,7 +853,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawnbrown6",
@@ -451,7 +866,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawngold7",
@@ -462,7 +879,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .to(
         "#lien1vhn #pawnbrown7",
@@ -473,8 +892,10 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        }, "pawn")
-      
+        },
+        "pawn"
+      )
+
       .to(
         "#lien1vhn #pawngold8",
         {
@@ -484,8 +905,10 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
-  
+        },
+        "pawn"
+      )
+
       .to(
         "#lien1vhn #pawnbrown8",
         {
@@ -495,7 +918,9 @@ function lien1vhn(fase) {
           height: "23%",
           objectFit: "contain",
           position: "fixed",
-        },"pawn")
+        },
+        "pawn"
+      )
 
       .add("reset")
       .from(

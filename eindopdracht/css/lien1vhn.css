@@ -1,13 +1,13 @@
 @charset "UTF-8";
 :root {
   --bgdark: #004746;
-  --bgmiddark:#006E6C;
+  --bgmiddark:hsl(179, 100%, 22%);
   --textcolorDark:#BF9534;
   --textcolor: #DBAB3B;
-  --gradiëntGold: #BC9051,#D9AD66,#FFFFFF;
+  --gradiëntGold: #BC9051,hsl(37, 60%, 63%),#FFFFFF;
   --gradiëntBrown: #4D4135,#493C33,#FFFFFF;
   --yellow-beige: #F2B950;
-  --beige:#D99C52;
+  --beige:hsl(33, 64%, 59%);
   --orangebrown:#D97F30;
   --lightbrown:#BF571B;
   --lightgray: #F2F2F2
@@ -46,8 +46,6 @@
   width: 100%;
   height: 12.5%;
   transition: background-color 0.5s ease-in-out;
-  max-width: 100%;
-  max-height: 100%;
 }
 #lien1vhn .square-black1, #lien1vhn .square-black2, #lien1vhn .square-black3, #lien1vhn .square-black4, #lien1vhn .square-black5, #lien1vhn .square-black6, #lien1vhn .square-black7, #lien1vhn .square-black8, #lien1vhn .square-black9, #lien1vhn .square-black10, #lien1vhn .square-black11, #lien1vhn .square-black12, #lien1vhn .square-black13, #lien1vhn .square-black14, #lien1vhn .square-black15, #lien1vhn .square-black16, #lien1vhn .square-black17, #lien1vhn .square-black18, #lien1vhn .square-black19, #lien1vhn .square-black20, #lien1vhn .square-black21, #lien1vhn .square-black22, #lien1vhn .square-black23, #lien1vhn .square-black24, #lien1vhn .square-black25, #lien1vhn .square-black26, #lien1vhn .square-black27, #lien1vhn .square-black28, #lien1vhn .square-black29, #lien1vhn .square-black30, #lien1vhn .square-black31, #lien1vhn .square-black32 {
   background-color: black;
@@ -60,13 +58,8 @@
   width: 100%;
   height: 100vh;
 }
-#lien1vhn .containerspace {
-  height: 150vh;
-  background: linear-gradient(#000, #010f0f, #004746, #006E6C, #BC9051, #BF9534, #735E51, #4D4135, #402721, #000);
-  position: relative;
-  z-index: -3;
-}
 #lien1vhn #intro {
+  position: relative;
   max-width: 40vw;
   color: var(--gray);
   text-shadow: #BF9534 2px 2px;
@@ -76,7 +69,6 @@
   margin-left: 50%;
   margin-right: 2rem;
   text-align: center;
-  opacity: 1;
 }
 #lien1vhn #intro > h1 {
   font-size: 3rem;
@@ -85,12 +77,6 @@
 }
 #lien1vhn #intro > p {
   margin: 3rem;
-}
-#lien1vhn #king, #lien1vhn #queen, #lien1vhn #rook, #lien1vhn #bishop, #lien1vhn #knight, #lien1vhn #pawn {
-  opacity: 1;
-}
-#lien1vhn #kinggold {
-  opacity: 0;
 }
 #lien1vhn .card-body-king, #lien1vhn .card-body-queen, #lien1vhn .card-body-rook, #lien1vhn .card-body-bishop, #lien1vhn .card-body-knight, #lien1vhn .card-body-pawn {
   display: block;
@@ -121,6 +107,54 @@
     transform: translateY(0);
   }
 }
-#lien1vhn img {
-  size: 150%;
-}/*# sourceMappingURL=lien1vhn.css.map */
+#lien1vhn #kinggold, #lien1vhn #queengold, #lien1vhn #rookgold, #lien1vhn #bishopgold, #lien1vhn #knightgold, #lien1vhn #pawngold #kingbrown, #lien1vhn #queenbrown, #lien1vhn #rookbrown, #lien1vhn #bishopbrown, #lien1vhn #knightbrown, #lien1vhn #pawnbrown, #lien1vhn #queencenter {
+  opacity: 0;
+}
+
+/* overview color tegels in javascript
+   //Coloring postion of the king gold.
+      .to(
+        "#lien1vhn .square-black31",
+        {
+          border: "2px solid #BF571B",
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      //Adding the possible steps for the king
+      .to(
+        "#lien1vhn .square-black27",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-black26",
+        {
+          backgroundColor: "#D9AD66",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white31",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white30",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+      .to(
+        "#lien1vhn .square-white27",
+        {
+          backgroundColor: "hsla(179, 100%, 22%, 0.5)",
+        },
+        "king"
+      )
+*//*# sourceMappingURL=lien1vhn.css.map */
