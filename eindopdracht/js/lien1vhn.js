@@ -634,10 +634,10 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #rookgold",
         {
-          left: "23%",
-          top: "60%",
-          width: "23%",
-          height: "23%",
+          left: "25%",
+          top: "63%",
+          width: "20%",
+          height: "20%",
           objectFit: "contain",
           position: "fixed",
           opacity: 1,
@@ -866,24 +866,10 @@ function lien1vhn(fase) {
       )
 
       .to(
-        "#lien1vhn #pawnbrown1",
-        {
-          left: "24%",
-          top: "13%",
-          width: "12%",
-          height: "12%",
-          objectFit: "contain",
-          position: "fixed",
-          opacity: 1,
-        },
-        "pawn"
-      )
-
-      .to(
         "#lien1vhn #pawngold1",
         {
-          left: "37%",
-          top: "44%",
+          left: "24%",
+          top: "66%",
           width: "12%",
           height: "12%",
           objectFit: "contain",
@@ -892,12 +878,11 @@ function lien1vhn(fase) {
         },
         "pawn"
       )
-
       .to(
-        "#lien1vhn #pawnbrown2",
+        "#lien1vhn #pawngold2",
         {
-          left: "23%",
-          top: "19%",
+          left: "43%",
+          top: "36%",
           width: "12%",
           height: "12%",
           objectFit: "contain",
@@ -910,10 +895,105 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn #pawngold3",
         {
-          left: "54%",
-          top: "54%",
-          width: "23%",
-          height: "23%",
+          left: "26%",
+          top: "62%",
+          width: "12%",
+          height: "12%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn #pawngold4",
+        {
+          left: "37%",
+          top: "44%",
+          width: "12%",
+          height: "12%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn #pawngold5",
+        {
+          left: "29%",
+          top: "57%",
+          width: "12%",
+          height: "12%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "pawn"
+      )
+
+      .to(
+        "#lien1vhn #pawngold6",
+        {
+          left: "41%",
+          top: "40%",
+          width: "12%",
+          height: "12%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "pawn"
+      )
+
+      .to(
+        "#lien1vhn #pawngold7",
+        {
+          left: "32%",
+          top: "53%",
+          width: "12%",
+          height: "12%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "pawn"
+      )
+
+      .to(
+        "#lien1vhn #pawngold8",
+        {
+          left: "35%",
+          top: "49%",
+          width: "12%",
+          height: "12%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "pawn"
+      )
+
+      .to(
+        "#lien1vhn #pawnbrown1",
+        {
+          left: "24%",
+          top: "13%",
+          width: "12%",
+          height: "12%",
+          objectFit: "contain",
+          position: "fixed",
+          opacity: 1,
+        },
+        "pawn"
+      )
+      .to(
+        "#lien1vhn #pawnbrown2",
+        {
+          left: "21%",
+          top: "17%",
+          width: "12%",
+          height: "12%",
           objectFit: "contain",
           position: "fixed",
           opacity: 1,
@@ -936,20 +1016,6 @@ function lien1vhn(fase) {
       )
 
       .to(
-        "#lien1vhn #pawngold4",
-        {
-          left: "54%",
-          top: "54%",
-          width: "23%",
-          height: "23%",
-          objectFit: "contain",
-          position: "fixed",
-          opacity: 1,
-        },
-        "pawn"
-      )
-
-      .to(
         "#lien1vhn #pawnbrown4",
         {
           left: "16%",
@@ -959,19 +1025,6 @@ function lien1vhn(fase) {
           objectFit: "contain",
           position: "fixed",
           opacity: 1,
-        },
-        "pawn"
-      )
-
-      .to(
-        "#lien1vhn #pawngold5",
-        {
-          left: "54%",
-          top: "54%",
-          width: "23%",
-          height: "23%",
-          objectFit: "contain",
-          position: "fixed",
         },
         "pawn"
       )
@@ -991,19 +1044,6 @@ function lien1vhn(fase) {
       )
 
       .to(
-        "#lien1vhn #pawngold6",
-        {
-          left: "54%",
-          top: "54%",
-          width: "23%",
-          height: "23%",
-          objectFit: "contain",
-          position: "fixed",
-        },
-        "pawn"
-      )
-
-      .to(
         "#lien1vhn #pawnbrown6",
         {
           left: "10%",
@@ -1018,19 +1058,6 @@ function lien1vhn(fase) {
       )
 
       .to(
-        "#lien1vhn #pawngold7",
-        {
-          left: "54%",
-          top: "54%",
-          width: "23%",
-          height: "23%",
-          objectFit: "contain",
-          position: "fixed",
-        },
-        "pawn"
-      )
-
-      .to(
         "#lien1vhn #pawnbrown7",
         {
           left: "7%",
@@ -1040,19 +1067,6 @@ function lien1vhn(fase) {
           objectFit: "contain",
           position: "fixed",
           opacity: 1,
-        },
-        "pawn"
-      )
-
-      .to(
-        "#lien1vhn #pawngold8",
-        {
-          left: "54%",
-          top: "54%",
-          width: "23%",
-          height: "23%",
-          objectFit: "contain",
-          position: "fixed",
         },
         "pawn"
       )
@@ -1103,14 +1117,352 @@ function lien1vhn(fase) {
       .to(
         "#lien1vhn .box",
         {
-          rotateX: "0",
-          rotateZ: "0",
-          rotateY: "0",
+          rotateX: "180",
+          rotateZ: "360",
+          rotateY: "360",
           scale: "1",
           transition: "preserve-3d",
           border: "0px solid darkgrey",
+          x: "100%",
+          rotate: "45deg",
+          backgroundColor: "white"
         },
         "reset"
       )
+      
+      .to(
+        "#lien1vhn .card-body-closure",
+        {
+          opacity: 0,
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #kinggold",
+        {
+          x: "300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #kingbrown",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+
+      .to(
+        "#lien1vhn #queengold",
+        {
+          x: "300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #queenbrown",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #knightgold",
+        {
+          x: "300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #knightbrown",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #knightgold2",
+        {
+          x: "300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #knightbrown2",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #rookgold",
+        {
+          x: "400%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #rookbrown",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #rookgold2",
+        {
+          x: "300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #rookbrown2",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+
+      .to(
+        "#lien1vhn #bishopgold",
+        {
+          x: "300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #bishopbrown",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #bishopgold2",
+        {
+          x: "300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #bishopbrown2",
+        {
+          x: "-200%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawnbrown1",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold1",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawnbrown2",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold2",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawnbrown3",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold3",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawnbrown4",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold4",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+
+      .to(
+        "#lien1vhn #pawnbrown5",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold5",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+
+      .to(
+        "#lien1vhn #pawnbrown6",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold6",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+
+      .to(
+        "#lien1vhn #pawnbrown7",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold7",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawnbrown8",
+        {
+          x: "-300%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+      )
+      .to(
+        "#lien1vhn #pawngold8",
+        {
+          x: "800%",
+          Y: "200%",
+          rotate: "360deg",
+          ease: "back.out(1)",
+        },
+        "reset"
+    )
+    
+  
   }
 }
