@@ -1,7 +1,30 @@
+:root {
+
+    /* color */
+
+    --bgcolor: #000;
+    --textcolor: #eabc15;
+    --textcolor2:#B3A347;
+    --shadowtitle: #9105dc;
+    --white: #fff;
+
+    /*animation title colors*/
+    
+    --color1: #3d1166;
+    --color2: #7f47b3;
+    --color3: #4784b3;
+    --color4: #72b347;
+    --color5: #b3a347;
+    
+
+  }
+
+
 Body {
-    Background-color: #6e0bab;
-    color: #eabc15;
+    Background-color: var(--bgcolor);
+    color: var(--textcolor);
     min-height: 100vh;
+    
 }
 
 h1 {
@@ -11,10 +34,10 @@ h1 {
         line-height: 1.1;
         display: flex;
         justify-content: center;
-        color: rgb(228, 221, 14);
+        color:var(--textcolor2);
         text-align: center;
         margin:0;
-        text-shadow: 8px 0px rgb(145, 5, 220);
+        text-shadow: 8px 0px var(--shadowtitle);
         padding-top: 3rem;
         padding-left: 4rem;
         padding-right: 4rem;
@@ -23,16 +46,16 @@ h1 {
         text-transform: uppercase;
       background-image: linear-gradient(
         -250deg,
-        hsl(289, 97%, 46%) 30%,
-        hsla(48, 94%, 44%, 0.801) 50%,
-        rgb(255, 255, 0) 67%,
-        hsl(60, 88%, 48%) 35%,
-        rgb(75, 200, 216) 100%
+        var(--color1) 30%,
+        var(--color2) 50%,
+        var(--color3) 67%,
+       var(--color4) 35%,
+        var(--color5) 100%
       );
       background-size: auto auto;
       background-clip: border-box;
       background-size: 200% auto;
-      color: #fff;
+      color: var(--white);
       background-clip: text;
       text-overflow:  transparent;
       -webkit-background-clip: text;
@@ -51,7 +74,8 @@ h1 {
     position: relative;
     display: inline-block;
     font-size: 40px;
-    color: hsl(55, 94%, 50%);
+    font-weight: 700;
+    color: var(--color1);
     text-transform: lowercase;
     animation: flip 5s linear infinite;
     animation-delay: calc(.5s * var(--i))
@@ -92,75 +116,83 @@ h1 {
     display: grid;
     max-width: 80%vw;
     padding-top: 3rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "one two three four"
-    "five six seven eight";
+    "one two three "
+    "four five six "
+    "seven eight nine ";
     
 }
 
 .first {
     grid-area: one;
-    background-color: rgb(205, 28, 169);
-    border-color: rgb(178, 7, 220);
+    background-color: var(--color2);
+    border-color: var(--color1);
     border-style: solid;
-    border-width: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem;
+}
 
+.first:hover, .second:hover, .third:hover, .fourth:hover, .fifth:hover, .sixth:hover, .seventh:hover, .eighth:hover, .ninth:hover {
+    background-color: var(--color1);
+    border-color: var(--color2);
+    transition: 0.5s;
+    box-shadow: #b3a347 0px 0px 20px 0px;
 }
 
 .second {
     grid-area: two;
-    background-color: rgba(173, 78, 241, 0.515);
-    border-color: rgb(224, 61, 243);
+    background-color: var(--color2);
+    border-color: var(--color1);
     border-style: solid;
-    border-width: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem;
     
-    
-
 }
+
 .third {
     grid-area: three;
-    background-color: rgb(205, 28, 169);
-    border-color: rgb(178, 7, 220);
+    background-color: var(--color2);
+    border-color: var(--color1);
     border-style: solid;
-    border-width: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem;
 }
+
 
 .fourth {
     grid-area: four;
-    background-color: rgba(173, 78, 241, 0.515);
-    border-color: rgb(224, 61, 243);
+    background-color: var(--color2);
+    border-color: var(--color1);
     border-style: solid;
-    border-width: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem;
 }
+
 .fifth {
     grid-area: five;
-    background-color: rgba(173, 78, 241, 0.515);
-    border-color: rgb(224, 61, 243);
+    background-color: var(--color2);
+    border-color: var(--color1);
     border-style: solid;
-    border-width: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem;
 }
 .sixth {
     grid-area: six;
-    background-color: rgb(205, 28, 169);
-    border-color: rgb(178, 7, 220);
+    background-color: var(--color2);
+    border-color: var(--color1);
     border-style: solid;
-    border-width: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem;
 }
 .seventh {
     grid-area: seven;
-    background-color: rgba(173, 78, 241, 0.515);
-    border-color: rgb(224, 61, 243);
+    background-color: var(--color2);
+    border-color: var(--color1);
     border-style: solid;
-    border-width: 0.5rem;
     border-radius: 2rem;
+    margin: 1rem;
 }
 
 a {
@@ -172,5 +204,26 @@ a {
     justify-content: center;
     align-items: center;
     height: 100%;
-    color:rgb(14, 241, 120);
+    color:var(--textcolor2);
+}
+
+a:hover{
+    color:var(--color2);
+    transition: 0.5s;
+    text-shadow: #3d1166;
+}
+
+footer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  color: var(--color1);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: hsl(51, 43%, 49%,0.5);
 }
